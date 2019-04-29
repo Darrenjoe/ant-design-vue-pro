@@ -2,8 +2,11 @@
   <div>
     {{ $t("message")["app.dashboard.analysis.timeLabel"] }} :
     <a-date-picker></a-date-picker>
-    <Chart :option="chartOption" style="height: 400px" />
-    <pre v-highlightjs="chartCode"><code class="html"></code></pre>
+    <Chart :option="chartOption" style="height: 400px">
+      <pre v-highlightjs="chartCode">
+        <code class="html"></code>
+      </pre>
+    </Chart>
   </div>
 </template>
 
